@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+}
+
+html,
+body,
+#root,
+.app {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+}
