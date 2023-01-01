@@ -26,7 +26,7 @@ function App() {
   }, [])
 
   return (
-    <div className="app ">
+    <div className="app overflow-x-hidden">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
