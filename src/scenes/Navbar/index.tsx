@@ -5,7 +5,7 @@ import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import ActionButton from "@/shared/ActionButton"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, Transition } from "framer-motion"
 
 type Props = {
   selectedPage: SelectedPage
@@ -84,7 +84,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             initial={{ x: "100%", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: "100%", opacity: 0 }}
-            transition={{ type: "tween", stiffness: 100 }}
+            transition={{ type: "tween", stiffness: 100 } as Transition}
             className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl"
           >
             {/* Close ICON */}
